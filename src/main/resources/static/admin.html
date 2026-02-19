@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+        <a href="/">Back to Store</a>
+    </header>
+    <main>
+        <div id="admin-product-management">
+            <h2>Product Management</h2>
+            <form id="create-product-form">
+                <h3>Create Product</h3>
+                <input type="text" id="product-name" placeholder="Product Name" required>
+                <textarea id="product-description" placeholder="Product Description" required></textarea>
+                <input type="number" id="product-price" placeholder="Product Price" step="0.01" required>
+                <input type="number" id="product-category-id" placeholder="Category ID" required>
+                <input type="number" id="product-quantity" placeholder="Quantity" required>
+                <input type="text" id="product-image-url" placeholder="Image URL">
+                <button type="submit">Create Product</button>
+            </form>
+        </div>
+        <hr>
+        <div id="admin-category-management">
+            <h2>Category Management</h2>
+            <form id="create-category-form">
+                <h3>Create Category</h3>
+                <input type="text" id="category-name" placeholder="Category Name" required>
+                <input type="number" id="parent-category-id" placeholder="Parent Category ID (optional)">
+                <button type="submit">Create Category</button>
+            </form>
+        </div>
+        <hr>
+        <div id="admin-order-management">
+            <h2>Order Management</h2>
+            <form id="update-order-status-form">
+                <h3>Update Order Status</h3>
+                <input type="number" id="order-id" placeholder="Order ID" required>
+                <select id="order-status" required>
+                    <option value="PENDING">Pending</option>
+                    <option value="PROCESSING">Processing</option>
+                    <option value="SHIPPED">Shipped</option>
+                    <option value="DELIVERED">Delivered</option>
+                    <option value="CANCELLED">Cancelled</option>
+                </select>
+                <button type="submit">Update Status</button>
+            </form>
+        </div>
+    </main>
+    <script src="admin.js"></script>
+</body>
+</html>

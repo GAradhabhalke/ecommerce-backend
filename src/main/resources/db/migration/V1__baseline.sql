@@ -1,0 +1,2 @@
+-- This is an empty file to establish a baseline for Flyway.
+-- It represents the state of the database before we started using Flyway.

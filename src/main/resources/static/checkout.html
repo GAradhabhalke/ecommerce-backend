@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+        <a href="/cart.html">Back to Cart</a>
+    </header>
+    <main>
+        <form id="payment-form">
+            <div id="payment-element">
+                <!-- Stripe.js will inject the payment form here -->
+            </div>
+            <button id="submit-button">Pay Now</button>
+            <div id="payment-message" class="hidden"></div>
+        </form>
+    </main>
+    <script src="checkout.js"></script>
+</body>
+</html>
