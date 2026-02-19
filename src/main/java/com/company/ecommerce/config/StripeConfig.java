@@ -9,7 +9,7 @@ import jakarta.annotation.PostConstruct;
 @Configuration
 public class StripeConfig {
 
-    @Value("${stripe.api.key}")
+    @Value("${stripe.secret.key}")
     private String secretKey;
 
     @PostConstruct
